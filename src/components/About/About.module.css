@@ -1,0 +1,68 @@
+.AboutMe {
+    background: black;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}   
+
+
+.AboutMe .Container {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}        
+   
+.AboutMe .Container .Text {
+    
+    color: #00ffd5;
+    font-size: 5vh;
+    width: 47%;
+       
+}
+
+ 
+.AboutMe .Container .Text h2 {
+    font-weight: 900;
+    font-size: calc(2rem + 1.5vw); 
+    font-family: 'Merienda', cursive;
+    color: aqua;
+ }   
+
+.AboutMe .Container .Text p {
+    color: white;
+}    
+
+
+.AboutMe .Container .Photo {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}     
+  
+.AboutMe .Container .Photo .Me {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10%;
+}
+
+
+@media (max-width: 500px) {
+
+    .AboutMe .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AboutMe .Container .Text {
+        width: 80%;
+    }
+    .AboutMe .Container .Photo {
+        width: 70%;
+    }
+}
+    

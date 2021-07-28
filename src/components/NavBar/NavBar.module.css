@@ -1,0 +1,93 @@
+.NavBar {
+    background: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar nav ul li {
+    display: inline-block;
+    margin: 1.5vw;
+}
+
+.NavBar nav ul li a {
+    text-decoration: none;
+    font-size: large;
+    color: #ffffff;
+}
+
+.NavBar a:hover {
+    border-bottom: 5px solid #00ffd5;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.NavBar .MobileNavigation {
+    display: none;
+}
+
+.Logo {
+    font-weight: 50;
+    font-family: 'Tangerine', cursive;
+    color: #00a2ff;
+}
+
+.NavBar .Logo {
+    font-size: 3vh;    
+}
+
+
+@media (max-width: 990px) {
+    .NavBar .Navigation {
+        display: none;
+    }
+
+    .NavBar .MobileNavigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .NavBar .MobileNavigation .Hamburger {
+        position: absolute;
+        right:5%;
+        cursor: pointer;
+    }
+
+    .NavBar nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 40%;
+        opacity: 0.9;
+        background: black;
+    }
+
+    .NavBar nav ul li {
+        padding-left: 15%;
+    }
+   .NavBar {
+       opacity: 1;
+    }
+
+   .NavBar a:hover {
+       border-bottom: none;
+       border-bottom: 5px solid #00ffd5;
+       border-radius: 4px;
+       transition: all 0.2s ease-out;
+   }
+
+
+};

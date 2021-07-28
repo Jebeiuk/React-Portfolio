@@ -1,0 +1,109 @@
+
+.Project {
+    background:black;
+    position: relative;
+    
+}
+.Skill {
+    color:#ff9e01;
+    font-weight: bold;
+}
+
+li {
+color: #00ffd5;
+font-weight:bolder
+}
+
+
+.Project .Background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    z-index: 0;
+}        
+
+.Project .ProjectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project .Videos {
+    width: 70%;
+    z-index: 1;
+}   
+
+.Videos:hover{
+    transform: scale(1.1);
+}
+
+.Project .Paragraph {
+    width: 65%;
+    z-index:1 ;
+}
+
+.Project .VideoContainer .Text {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 45%;
+}        
+
+.Project .VideoContainer .Thumbnail {
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    width: 35%;
+    position: relative;
+}    
+
+.Project .VideoContainer .Thumbnail img {
+    max-width: 489px ;
+    width: 100% ;
+    border-radius: 10px;
+}  
+
+.Project .VideoContainer .Thumbnail .PlayButton {
+    position: absolute;
+    width: 30%;
+    left: 12%;
+    top: 25%;
+    bottom: 25%;
+    cursor: pointer;
+}
+
+.Project .Videos .VideoContainer {
+    display: flex;
+    background: rgb(0, 0, 0);
+    margin-bottom: 5%;
+    height: 100%;
+    align-items: center;
+    border-radius: 10px;
+}    
+
+
+@media (max-width: 756px) {
+
+    .Project .Videos .VideoContainer {
+        flex-direction: column;
+    }
+    
+    .Project .Videos .Text {
+        width: 80%;
+    }
+
+    .Project .Videos .Thumbnail {
+        width: 80%;
+    }
+
+};
+
+@media (max-width: 500px) {
+    
+    .Project .Videos .Text {
+        width: 90%;
+    }
+
+    .Project .Videos .Thumbnail {
+        width: 90%;
+    }
+
+};
