@@ -1,0 +1,21 @@
+.Contact {
+   background: rgb(0, 0, 0);
+   justify-content: center;
+   height: 35vh;
+   position: relative;
+   
+}
+
+.Contact .ContactIcons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Contact .ContactIcons div {
+    padding: 10px;
+}
+
+.Contact .ContactIcons svg path {
+    cursor: pointer;
+}

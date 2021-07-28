@@ -1,0 +1,116 @@
+
+.Project {
+    background:black;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    color: rgb(0, 255, 213);
+}    
+
+h2 {
+    color:#ff9e01;
+}
+
+.Project .Background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    z-index: 0;
+}        
+
+.Project .ProjectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project .Projects {
+    width: 70%;
+    z-index: 1;
+}
+
+.Project .Paragraph {
+    width: 65%;
+    z-index:1 ;
+}
+
+.Project .ProjectContainer .Text {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 45%;
+}        
+
+
+.Project .ProjectContainer .Text .LinkName {
+    display: flex;
+    position: relative;
+}  
+
+.Project .ProjectContainer .Thumbnail {
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    width: 45%;
+    position: relative;
+}
+
+.Project .ProjectContainer .Thumbnail img {
+    max-width: 489px ;
+    width: 100% ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(124, 229, 255);
+}
+    
+
+
+ .PlayButton {
+    width: 15%;
+    cursor: pointer;
+    align-items: center;
+    padding-top: 3vh;
+} 
+
+
+.Project .Projects .ProjectContainer {
+    display: flex;
+    background: rgb(0, 0, 0);
+    margin-bottom: 5%;
+    height: 100%;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(124, 229, 255);
+}
+
+
+@media (max-width: 756px) {
+    .Project .Projects .ProjectContainer {
+        flex-direction: column;
+    }
+    
+    .Project .Projects .Text {
+        width: 80%;
+    }
+
+    .Project .Projects .Thumbnail {
+        width: 80%;
+    }
+    .PlayButton {
+        padding-top: 2vh;
+    } 
+
+};
+
+@media (max-width: 500px) {
+    
+    .Project .Projects .Text {
+        width: 90%;
+    }
+
+    .Project .Projects .Thumbnail {
+        width: 90%;
+    }
+
+};
+
+

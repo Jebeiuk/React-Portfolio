@@ -1,0 +1,118 @@
+.Home {
+  background: black;
+  height: 75vh;
+  padding-top: 30vh;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  
+}
+
+.Home .Container .HomePic {
+  max-width: 100%; 
+  width: 43vw;        
+  left: 27%;   
+  top: 15vh; 
+  position: absolute;
+    
+}
+
+.Home .Container .Name {
+  color: #f85b00;
+  font-size: calc(1rem + 9.5vw);
+  font-family: 'Zen Loop', cursive;
+  padding-left: 9vw;   
+  z-index: 3; 
+  top: 19vh; 
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}  
+    
+
+.Home .Container .Name:hover {
+    color: #ff9900;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    }
+   
+
+.Home .Container .WebName {
+    color: #ff9900;
+    font-size: calc(1rem + 9.5vw);
+    font-family: 'Zen Loop', cursive;
+    right: 12vw;  
+    z-index: 3; 
+    top: 19vh; 
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+    animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+.Home .Container .WebName:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.Home .Container h1{
+    margin:0;
+}
+
+
+@media screen and (min-width: 100px) 
+              and (max-width:992px) {
+  .Home {
+    height: 22vh;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    
+  }    
+
+  
+}
+
+@media screen and (max-width: 1100px) 
+               {
+  .Home {
+    height: 25vh;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    
+  }    
+
+  
+}
+
+
+
+@keyframes neon5 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+        0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+        0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+    }
+  }
+
+  
+
+  @keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+        0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }

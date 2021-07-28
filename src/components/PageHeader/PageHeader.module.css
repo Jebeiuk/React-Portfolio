@@ -1,0 +1,33 @@
+.Container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+    padding-top: 5%;
+  }    
+    
+.Container hr{
+    position: absolute;
+    left: 0;
+    width: 12vw;
+    border: 1px solid rgb(0, 255, 242);
+}
+
+.Container h1 {
+    color:#ff9e01;
+    font-family: 'Zen Loop', cursive;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}    
+
+
+@media (max-width: 475px) {
+    
+    .Container hr {
+        display: none;
+    }
+    .Container{
+
+        padding-top: 18%;
+    }    
+};
